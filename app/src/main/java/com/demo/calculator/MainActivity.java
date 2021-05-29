@@ -119,5 +119,6 @@ public class MainActivity extends AppCompatActivity {
         symbol = "unknown";
         isSecondNum = false;
         textViewScreen.setText("0");
+        isResultOnScreen = false;
     }
 }
