@@ -83,29 +83,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickOnEquals(View view) {
-        if (symbol.equals("+")) {
-            Double result = Double.parseDouble(firstNum.toString()) + Double.parseDouble(secondNum.toString());
-            textViewScreen.setText(result.toString());
-            firstNum = new StringBuilder(result.toString());
-            isSecondNum = false;
-            isResultOnScreen = true;
-        }
-        if (symbol.equals("-")) {
-            Double result = Double.parseDouble(firstNum.toString()) - Double.parseDouble(secondNum.toString());
-            textViewScreen.setText(result.toString());
-            firstNum = new StringBuilder(result.toString());
-            isSecondNum = false;
-            isResultOnScreen = true;
-        }
-        if (symbol.equals("/")) {
-            Double result = Double.parseDouble(firstNum.toString()) / Double.parseDouble(secondNum.toString());
-            textViewScreen.setText(result.toString());
-            firstNum = new StringBuilder(result.toString());
-            isSecondNum = false;
-            isResultOnScreen = true;
-        }
-        if (symbol.equals("*")) {
-            Double result = Double.parseDouble(firstNum.toString()) * Double.parseDouble(secondNum.toString());
+        if (!firstNum.toString().isEmpty() && symbol != null && !secondNum.toString().isEmpty()) {
+            Double result = new Calculator(firstNum, symbol, secondNum).calculate();
             textViewScreen.setText(result.toString());
             firstNum = new StringBuilder(result.toString());
             isSecondNum = false;
@@ -116,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
     public void clickOnReset(View view) {
         firstNum = new StringBuilder();
         secondNum = new StringBuilder();
-        symbol = "unknown";
+        symbol = null;
         isSecondNum = false;
         textViewScreen.setText("0");
         isResultOnScreen = false;
