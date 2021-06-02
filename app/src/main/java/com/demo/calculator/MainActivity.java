@@ -3,7 +3,10 @@ package com.demo.calculator;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -21,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+        setTheme(sp.getInt("Theme", R.style.Theme_Calculator));
         setContentView(R.layout.activity_main);
 
         textViewScreen = findViewById(R.id.textViewScreen);
@@ -99,5 +105,15 @@ public class MainActivity extends AppCompatActivity {
         isSecondNum = false;
         textViewScreen.setText("0");
         isResultOnScreen = false;
+    }
+
+    public void clickOnTheme(View view) {
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        if (sharedPreferences.getInt("Theme", R.style.Theme_Calculator) == R.style.Theme_Calculator) {
+            sharedPreferences.edit().putInt("Theme", R.style.Theme_Calculator2).apply();
+        } else {
+            sharedPreferences.edit().putInt("Theme", R.style.Theme_Calculator).apply();
+        }
+        recreate();
     }
 }

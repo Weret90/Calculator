@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="button_text">16sp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+    <dimen name="button_margin_end_size">8dp</dimen>
+    <dimen name="screen_margin_size">16dp</dimen>
+    <dimen name="screen_padding_size">8dp</dimen>
+    <dimen name="screen_text_size">28sp</dimen>
+    <dimen name="screen_width">375dp</dimen>
+    <dimen name="button_corner_radius">16dp</dimen>
 </resources>

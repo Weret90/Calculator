@@ -18,4 +18,5 @@
     <string name="_equals">=</string>
     <string name="calc_screen">0</string>
     <string name="_reset">C</string>
+    <string name="_theme">theme</string>
 </resources>
