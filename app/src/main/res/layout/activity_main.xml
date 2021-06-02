@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/calculator">
+    android:background="@drawable/calculator"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textViewScreen"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:text="@string/calc_screen"
+        android:layout_margin="16dp"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="end"/>
 
     <GridLayout
         android:layout_width="wrap_content"
@@ -18,7 +33,8 @@
             android:layout_marginEnd="8dp"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="@string/_1"
-            android:textSize="@dimen/button_text" />
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnNum"/>
 
         <Button
             android:id="@+id/button_2"
@@ -27,7 +43,8 @@
             android:layout_marginEnd="8dp"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="@string/_2"
-            android:textSize="@dimen/button_text" />
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnNum"/>
 
         <Button
             android:id="@+id/button_3"
@@ -36,7 +53,8 @@
             android:layout_marginEnd="8dp"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="@string/_3"
-            android:textSize="@dimen/button_text" />
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnNum"/>
 
         <Button
             android:id="@+id/button_addition"
@@ -44,7 +62,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="@string/_addition"
-            android:textSize="@dimen/button_text" />
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnSymbol"/>
 
         <Button
             android:id="@+id/button_4"
@@ -52,7 +71,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="@string/_4"
-            android:textSize="@dimen/button_text" />
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnNum"/>
 
         <Button
             android:id="@+id/button_5"
@@ -60,7 +80,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="@string/_5"
-            android:textSize="@dimen/button_text" />
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnNum"/>
 
         <Button
             android:id="@+id/button_6"
@@ -68,7 +89,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="@string/_6"
-            android:textSize="@dimen/button_text" />
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnNum"/>
 
         <Button
             android:id="@+id/button_difference"
@@ -76,7 +98,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="@string/_difference"
-            android:textSize="@dimen/button_text" />
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnSymbol"/>
 
         <Button
             android:id="@+id/button_7"
@@ -84,7 +107,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="@string/_7"
-            android:textSize="@dimen/button_text" />
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnNum"/>
 
         <Button
             android:id="@+id/button_8"
@@ -92,7 +116,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="@string/_8"
-            android:textSize="@dimen/button_text" />
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnNum"/>
 
         <Button
             android:id="@+id/button_9"
@@ -100,7 +125,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="@string/_9"
-            android:textSize="@dimen/button_text" />
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnNum"/>
 
         <Button
             android:id="@+id/button_composition"
@@ -108,7 +134,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="@string/_composition"
-            android:textSize="@dimen/button_text" />
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnSymbol"/>
 
         <Button
             android:id="@+id/button_0"
@@ -121,7 +148,8 @@
             android:layout_marginEnd="8dp"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="@string/_0"
-            android:textSize="@dimen/button_text" />
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnNum"/>
 
         <Button
             android:id="@+id/button_point"
@@ -129,7 +157,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="@string/_point"
-            android:textSize="@dimen/button_text" />
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnPoint"/>
 
         <Button
             android:id="@+id/button_division"
@@ -137,7 +166,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="@string/_division"
-            android:textSize="@dimen/button_text" />
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnSymbol"/>
 
         <Button
             android:id="@+id/button_equals"
@@ -145,12 +175,22 @@
             android:layout_height="wrap_content"
             android:layout_row="4"
             android:layout_column="0"
-            android:layout_columnSpan="4"
+            android:layout_columnSpan="3"
             android:layout_gravity="fill"
+            android:layout_marginEnd="8dp"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="@string/_equals"
-            android:textSize="@dimen/button_text" />
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnEquals"/>
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:text="@string/_reset"
+            android:textSize="@dimen/button_text"
+            android:onClick="clickOnReset"/>
 
     </GridLayout>
-
-</FrameLayout>
+</LinearLayout>
