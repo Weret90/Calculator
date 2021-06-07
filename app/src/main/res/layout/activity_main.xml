@@ -30,8 +30,6 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_1"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/button_margin_end_size"
             android:onClick="clickOnNum"
             android:text="@string/_1" />
@@ -39,8 +37,6 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_2"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/button_margin_end_size"
             android:onClick="clickOnNum"
             android:text="@string/_2" />
@@ -48,8 +44,6 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_3"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/button_margin_end_size"
             android:onClick="clickOnNum"
             android:text="@string/_3" />
@@ -57,80 +51,60 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_addition"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:onClick="clickOnSymbol"
             android:text="@string/_addition" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_4"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:onClick="clickOnNum"
             android:text="@string/_4" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_5"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:onClick="clickOnNum"
             android:text="@string/_5" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_6"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:onClick="clickOnNum"
             android:text="@string/_6" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_difference"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:onClick="clickOnSymbol"
             android:text="@string/_difference" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_7"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:onClick="clickOnNum"
             android:text="@string/_7" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_8"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:onClick="clickOnNum"
             android:text="@string/_8" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_9"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:onClick="clickOnNum"
             android:text="@string/_9" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_composition"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:onClick="clickOnSymbol"
             android:text="@string/_composition" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_0"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_columnSpan="2"
             android:layout_gravity="fill"
             android:layout_marginEnd="@dimen/button_margin_end_size"
@@ -140,24 +114,18 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_point"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:onClick="clickOnPoint"
             android:text="@string/_point" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_division"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:onClick="clickOnSymbol"
             android:text="@string/_division" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_equals"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_columnSpan="2"
             android:layout_gravity="fill"
             android:layout_marginEnd="@dimen/button_margin_end_size"
@@ -165,8 +133,6 @@
             android:text="@string/_equals" />
 
         <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             style="@style/buttonStile"
             android:text="@string/_theme"
             android:onClick="clickOnTheme"
@@ -175,8 +141,6 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_reset"
             style="@style/buttonStile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:onClick="clickOnReset"
             android:text="@string/_reset" />
 
