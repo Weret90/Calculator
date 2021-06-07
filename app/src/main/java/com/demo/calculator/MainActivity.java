@@ -3,6 +3,7 @@ package com.demo.calculator;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -108,12 +109,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickOnTheme(View view) {
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        if (sharedPreferences.getInt("Theme", R.style.Theme_Calculator) == R.style.Theme_Calculator) {
-            sharedPreferences.edit().putInt("Theme", R.style.Theme_Calculator2).apply();
-        } else {
-            sharedPreferences.edit().putInt("Theme", R.style.Theme_Calculator).apply();
-        }
-        recreate();
+        Intent intent = new Intent(MainActivity.this, ThemeActivity.class);
+        startActivity(intent);
     }
 }
